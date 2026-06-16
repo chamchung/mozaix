@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mozaix — See the full picture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mozaix.css">
+</head>
+<body>
+<div class="hero" id="hero" data-screen-label="Mozaix Hero">
+
+  <div class="scene">
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="tint"></div>
+  <div class="sheen"></div>
+  <div class="cursor-light" id="cursorLight"></div>
+  <div class="vignette"></div>
+
+  <div class="ui">
+    <div class="topbar">
+      <div class="wordmark">
+        <b>MOZAIX</b>
+        <span>Financial&nbsp;Intelligence</span>
+      </div>
+      <nav class="nav">
+        <a href="#">Platform</a>
+        <a href="#">Pieces</a>
+        <a href="#">Company</a>
+        <a href="#">Sign in</a>
+      </nav>
+    </div>
+
+    <div class="copy" id="copy">
+      <div class="eyebrow">
+        <span class="num swap in" id="eyeNum">01</span>
+        <span class="rule"></span>
+        <span class="swap in" id="eyeLabel">Fragmented</span>
+      </div>
+      <h1 class="headline swap in" id="headline">Your money lives<br>in pieces.</h1>
+      <p class="sub swap in" id="sub">Dozens of accounts, cards, loans and goals — each a separate panel, none aware of the others.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="scene-count"><b id="cur">01</b> &nbsp;/&nbsp; 03</div>
+      <div class="dots" id="dots"></div>
+    </div>
+
+    <div class="hint" id="hint">
+      <span>Click any tile to reconfigure</span>
+      <span class="track"><i></i></span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===================== BELOW THE FOLD ===================== -->
+<section class="section s-statement" data-screen-label="Statement">
+  <div class="kicker"><span class="num">—</span><span class="rule"></span><span>The idea</span></div>
+  <p>Your financial life is a mosaic. Mozaix assembles every piece into <em>one living picture.</em></p>
+</section>
+
+<section class="section s-pieces" data-screen-label="The pieces">
+  <div class="pieces-head">
+    <h2>Every piece,<br>in its place.</h2>
+    <p>Accounts, cards, debt, investments, taxes and goals — each a panel in the grid, each aware of the whole.</p>
+  </div>
+  <div class="pieces" id="piecesGrid">
+    <div class="piece"><span class="pn">01</span><div><h4>Accounts</h4><p>Every balance, one continuous ledger.</p></div></div>
+    <div class="piece"><span class="pn">02</span><div><h4>Cards</h4><p>Spending, always read in context.</p></div></div>
+    <div class="piece"><span class="pn">03</span><div><h4>Debt</h4><p>Payoff planned, progress made visible.</p></div></div>
+    <div class="piece"><span class="pn">04</span><div><h4>Investments</h4><p>Holdings seen as a single whole.</p></div></div>
+    <div class="piece"><span class="pn">05</span><div><h4>Taxes</h4><p>What's owed and owed back, year-round.</p></div></div>
+    <div class="piece"><span class="pn">06</span><div><h4>Goals</h4><p>The targets the system steers toward.</p></div></div>
+    <div class="piece"><span class="pn">07</span><div><h4>Rewards</h4><p>Points and perks, finally accounted for.</p></div></div>
+    <div class="piece"><span class="pn">08</span><div><h4>Estate</h4><p>Plans that outlast the moment.</p></div></div>
+  </div>
+</section>
+
+<section class="section s-close" data-screen-label="Close">
+  <h2>See the <em>full picture.</em></h2>
+  <a class="cta" href="#">Request access →</a>
+</section>
+
+<footer class="foot">
+  <span>Mozaix © 2026</span>
+  <span>Financial Intelligence</span>
+</footer>
+
+<template id="__bundler_thumbnail" data-bg-color="#06080d">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#0a0d14;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#04060a;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="url(#bgGrad)"/>
+    <!-- Mosaic grid of squares -->
+    <g opacity="0.9">
+      <rect x="150" y="100" width="80" height="80" fill="#6ea3e0" opacity="0.8"/>
+      <rect x="250" y="100" width="80" height="80" fill="#4dc294" opacity="0.8"/>
+      <rect x="350" y="100" width="80" height="80" fill="#d4715f" opacity="0.8"/>
+      <rect x="450" y="120" width="80" height="80" fill="#6ea3e0" opacity="0.7"/>
+      <rect x="200" y="200" width="80" height="80" fill="#4dc294" opacity="0.75"/>
+      <rect x="300" y="220" width="80" height="80" fill="#d4715f" opacity="0.7"/>
+      <rect x="400" y="200" width="80" height="80" fill="#6ea3e0" opacity="0.8"/>
+      <rect x="500" y="240" width="80" height="80" fill="#4dc294" opacity="0.7"/>
+      <rect x="170" y="320" width="80" height="80" fill="#d4715f" opacity="0.75"/>
+      <rect x="280" y="340" width="80" height="80" fill="#6ea3e0" opacity="0.7"/>
+    </g>
+    <!-- "MOZAIX" text -->
+    <text x="600" y="400" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#f4f1ea" text-anchor="middle" letter-spacing="4">MOZAIX</text>
+    <text x="600" y="460" font-family="Arial, sans-serif" font-size="20" fill="#f4f1eaa0" text-anchor="middle">Financial Intelligence</text>
+  </svg>
+</template>
+
+<script src="mozaix-engine.js"></script>
+
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const MZ_DEFAULTS = {
+    seams: 1.0,
+    motion: 1.0,
+    parallax: 1.0,
+    waveSpeed: 1.0,
+    hoverDepth: 0.62,
+  };
+  function MozaixTweaks(){
+    const [t, setTweak] = useTweaks(MZ_DEFAULTS);
+    React.useEffect(()=>{ window.applyMozaixTweaks && window.applyMozaixTweaks(t); }, [t]);
+    return (
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Structure" />
+        <TweakSlider label="Seam width" value={t.seams} min={0} max={2.4} step={0.1}
+                     onChange={(v)=>setTweak('seams', v)} />
+        <TweakSection label="Ambient life" />
+        <TweakSlider label="Idle motion" value={t.motion} min={0} max={1.8} step={0.1}
+                     onChange={(v)=>setTweak('motion', v)} />
+        <TweakSlider label="Parallax" value={t.parallax} min={0} max={2} step={0.1}
+                     onChange={(v)=>setTweak('parallax', v)} />
+        <TweakSection label="Interaction" />
+        <TweakSlider label="Hover depth" value={t.hoverDepth} min={0} max={1.1} step={0.05}
+                     onChange={(v)=>setTweak('hoverDepth', v)} />
+        <TweakSlider label="Wave speed" value={t.waveSpeed} min={0.5} max={2} step={0.1}
+                     onChange={(v)=>setTweak('waveSpeed', v)} />
+      </TweaksPanel>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<MozaixTweaks />);
+</script>
+</body>
+</html>
